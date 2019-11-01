@@ -1,5 +1,19 @@
 # jmh-benchmark
 
+## Summary
+
+| Sample Size  | Ops  | Mode | Cnt | Score ±Error (ms/op  | 
+|---|---|---|---|---|
+|300   |  full |  avgt | 10  |   0.083 ± 0.011 |
+| ↑ | mod  | avgt  |  10 |  0.124 ± 0.008  |
+| ↑  |  simple |  avgt | 10  | 0.050 ± 0.009   |
+|3000   |  full | avgt  | 10  |  1.356 ± 0.122 |
+| ↑  | mod  | avgt  |  10 |  1.755 ± 0.212  |
+| ↑  | simple  |  avgt |  10 | 0.638 ± 0.026   |
+|30000   |  full | avgt  | 10  |  27.023 ± 1.145  |
+| ↑  | mod  | avgt  | 10  |  28.883 ± 2.201 |
+| ↑  |  simple | avgt  |  10 |  10.995 ± 1.086  |
+
 ## Command
 `sbt 'jmh:run -i 10 -wi 3 -f 1 -t 1'`
 
